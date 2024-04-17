@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form learn about it</title>
+</head>
+<body>
+    <h1>Form to Apply for TA in Web Dev Course</h1>
+    <form action="post">    <!-- action="get/post"-->
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name"> <!--Id will be unique-->
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male" required> 
+            <!--Required - it's required that inpurt or you can say Mandatory-->
+            <label for="male">Male</label> 
+            <!--If you any mistake in id in Label then you won't be able to select by clicking on Name he have to click on radio button only-->
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="male">Female</label>
+            <!--In above inputs name is same in both because of that user will only able to click one radio button at a time-->
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to your Favourite channel</label>
+        </div>
+        <div>
+            <label for="comment">Enter your Comments</label>
+            <br>
+            <textarea name="comment" id="comment" cols="20" rows="10" autofocus></textarea> 
+            <!--Whenever you'll type your cursor will be on this are by default at first-->
+        </div>
+        <div>
+            <select name="Fruits" id="Fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="guava">Guava</option>
+            </select>
+        </div>
+
+    </form> 
+</body>
+</html>
