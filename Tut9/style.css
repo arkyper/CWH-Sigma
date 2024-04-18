@@ -1,0 +1,13 @@
+ /* . used for Classes and # used for Ids  */
+
+ .red {
+    color: blue;
+ }
+
+.bg-yellow {
+    background-color: yellowgreen;
+}
+
+#seconddiv {
+    background-color: teal;
+}
