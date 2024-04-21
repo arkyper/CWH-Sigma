@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* Element Selector */
+        div {
+            background-color: aqua;
+        }
+
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p {           /*This will work only with Direct Child*/
+            color: black;
+            background-color: yellow;
+        }
+
+        /* Descendant Selector */
+        div p {             /*This will work Direct or Indirect Child*/
+            color:crimson;
+            background-color: darkgray;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: brown;
+        }
+        a:link {
+            color: green;
+        }
+        a:active {
+            color: yellow;
+        }
+        a:hover {
+            color: aqua;
+        }
+
+        p:first-child {
+            color: teal;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>First Child</p>
+        <p>Second Child</p>
+    </main>
+    <div class="red">
+        I'm red 'Class Selector' 
+    </div>
+
+    <div class="a">
+        Hi There I'm styled through 'Element Selector'
+        <p>I'm a Paragraph under Div and I'm styled with the help of 'Child Selector', Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, numquam.</p>
+
+        <article>
+            <p>I'm Paragraph under 'Div > article > p' and I'm styled through 'Descendant Selector', Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, recusandae. </p>
+        </article>
+    </div>
+
+    <div id="green">
+        I'm green 'ID Selector'
+    </div>
+    
+    <a href="https://www.youtube.com">Visit YouTube</a> 
+    <br>
+    <a href="https://www.facebook.com">Visit Facebook</a>
+    <br>
+    <a href="https://web.dev/learn/css/pseudo-classes">Click here to Know more Pseudo Classes</a>
+</body>
+</html>
