@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Test, and Color</title>
+    <style>
+        /* If you want to use External Fonts then you can use them and Import them into CSS */
+        /* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap'); */
+        /* Here I'm Importing 2 Fonts at the same time */
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        h1 {
+            font-family: "Poppins", Helvetica, sans-serif;
+            /* Here first Font is Main and rest of 2 are 'Fallback Fonts' */
+        }
+        p {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Baloo 2", sans-serif;
+            font-style: italic;              /*To Style your FONT*/
+            font-weight: 200;                /*To make your Font BOLD*/
+            text-decoration: underline;      /*To Decorate your FONT*/
+            font-size: 20px;
+            line-height: 5;                  /*Height between Lines*/
+            letter-spacing: 5;               /*Spaces between Letters*/
+
+        }
+        h2 {
+            text-transform: capitalize;       /*Transform Text into Upper/Lower/Capital Cases*/
+
+            /* Here my Second Line of code dependent on First for you need to Prioritize First line then use Dependent line */
+            text-decoration: overline;         
+            text-decoration-color: orangered;       /*Colored that Decoration*/
+            text-decoration-style: solid;             /*Give Style to that Decoration*/
+            text-decoration-thickness: 8px;           /*Give Thickness to that Decoration*/
+        }
+        .Lorem {
+            border: 2px solid red;
+            width: 50px;
+            /* text-overflow: ellipsis; */
+            text-overflow: clip;                      /*Helpful when Content Overflow*/
+            overflow: hidden;
+        }
+        .lorem {
+            border: 2px solid green;
+            width: 150px;
+            word-break: break-all;                    /*It'll break words in order to fill that Border*/
+            text-align: center;                       /*It'll Align the Text*/
+        }
+    </style>
+
+    <!-- You can use External Font and Link them here in HEAD tag, here I'm using Google FONTS -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>Dattebayo!</h2>
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+        <p class="Lorem">This tutorial is for Fonts</p>
+        <p class="lorem">This tutorial is for Fonts Word Break</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, voluptas asperiores mollitia dicta quaerat impedit animi ullam minima assumenda, suscipit expedita harum dolore eveniet laudantium. Voluptates hic voluptatum sint reprehenderit totam, veritatis maiores qui beatae cumque, consequatur voluptatibus molestiae. Quidem.</p>
+    </div>
+</body>
+</html>
