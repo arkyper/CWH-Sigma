@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: aqua;
+        }
+        .box1 {
+            color: tomato;
+            /* The space between the actual content and the border of the element is the padding. */
+            padding: 10px;     
+
+            /* The margin is the space outside the element that separates it from other elements in the layout. */
+            margin: 25px;
+
+            /* The border surrounds the content and padding and gives the visual border of the element. */
+            border: 2px solid blue;
+            
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2 {
+            color: green;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I'm First Box</div>
+    <div class="box box2">I'm Second Box</div>
+</body>
+</html>
